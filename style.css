@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.banner{
+    padding: 10px 20px;
+}
+
+.banner .logo-image,.logo-text{
+    vertical-align: middle;
+}
+
+.banner .logo-text{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.grey.container{
+    height: 100vh;
+    background-color: #ededed;
+}
