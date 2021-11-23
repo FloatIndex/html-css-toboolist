@@ -5,21 +5,25 @@
 }
 
 .banner{
-    padding: 10px 20px;
+    padding: 20px 25px;
 }
 
 .banner .logo-image,.logo-text{
     vertical-align: middle;
 }
 
+.banner .logo-image{
+    height: 80px;
+}
+
 .banner .logo-text{
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
 }
 
 .grey.container{
     height: 100vh;
-    background-color: #ededed;
+    background-color: rgb(246, 248, 249);
     padding: 40px;
 }
 
@@ -66,11 +70,12 @@ main{
 .menu-element{
     margin-top: 10px;
     margin-bottom: 25px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .menu-title{
     margin-top: 30px;
+    font-size: 2em;
 }
 
 .menu-title::before{
@@ -78,19 +83,23 @@ main{
     padding: 5px;
 }
 
+.menu-element.checked::before, .menu-element.not-checked::before{
+    font-size: 0.7em;
+    padding: 0px 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 .menu-element.checked::before{
-    padding: 5px;
     content: '\2713';
-    color: rgb(13, 199, 13);
-    /* border: 5px, solid, rgb(13, 199, 13); */
+    color: #0dc70d;
+    border: 1px solid #0dc70d;
 }
 
 .menu-element.not-checked::before{
-    padding: 5px;
     content: '\2715';
     color: #f00;
-    /* border: 5px, solid, #f00; */
-
+    border: 1px solid #f00;
 }
 
 .menu-element .editorial,.q1-goals,.recruiting,.mobile,.website,.sales{
@@ -99,7 +108,6 @@ main{
     margin: 5px;
     padding: 5px 10px;
     border-radius: 15px;
-    vertical-align: middle;
 }
 
 .menu-element .editorial{
