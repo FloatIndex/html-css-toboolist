@@ -12,7 +12,7 @@
 }
 
 .banner .logo-text{
-    font-size: 40px;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -60,4 +60,47 @@ main{
 
 .white-btn-text{
     color: grey;
+}
+
+.menu-title::before{
+    content: '\25BE';
+    padding: 5px;
+}
+
+.menu-element.checked::before{
+    padding: 5px;
+    content: '\2713';
+}
+
+.menu-element.not-checked::before{
+    padding: 5px;
+    content: '\2715';
+}
+
+.menu-element .editorial,.q1-goals,.recruiting,.website,.sales{
+    color: #fff;
+    font-size: 0.7em;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.menu-element .editorial{
+    background-color: rgb(99, 171,235);
+}
+
+.menu-element .q1-goals{
+    background-color: rgb(151, 116, 221);
+}
+
+.menu-element .recruiting{
+    background-color: rgb(230, 162, 75);
+}
+
+.menu-element .website{
+    background-color: rgb(201, 106, 159);
+}
+
+.menu-element .sales{
+    background-color: rgb(182, 200, 73);
 }
