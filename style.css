@@ -23,25 +23,33 @@
 }
 
 main{
+    border-radius: 5px;
+    overflow: hidden;
     width: 70%;
     margin: auto;
-    background-color: #fff;
-    padding: 20px 40px;
-    border-radius: 5px;
 }
 
-.button{
+.btn-section, .menu-section{
+    background-color: #fff;
+    padding: 20px 40px;
+}
+
+.btn-section{
+    margin-bottom: 3px;
+}
+
+.btn{
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
 }
 
-.button.blue{
+.btn.blue{
     background-color: rgb(99, 171,235);
 }
 
-.button.white{
+.btn.white{
     background-color: #fff;
     border: 1px solid grey;
 }
