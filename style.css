@@ -19,6 +19,15 @@
 .grey.container{
     height: 100vh;
     background-color: #ededed;
+    padding: 40px;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
 }
 
 .button{
@@ -35,6 +44,10 @@
 .button.white{
     background-color: #fff;
     border: 1px solid grey;
+}
+
+.blue-btn-text{
+    color: #fff;
 }
 
 .white-btn-text{
