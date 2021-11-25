@@ -8,11 +8,6 @@
     <title>Toboolist</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
@@ -23,42 +18,40 @@
     </header>
     <!-- fine intestazione con banner -->
 
-    <div class="grey container">
-        <main>
-            <!-- inizio sezione bottoni -->
-            <section class="btn-section">
-                <!-- <input type="button" value="Add Task"> non permette di stilizzare il testo dentro al bottone -->
-                <button class="blue btn" type="button"><span class="blue-btn-text">Add Task</span></button>
-                <button class="white btn" type="button"><span class="white-btn-text">Add Section</span></button>
-            </section>
-            <!-- fine sezione bottoni -->
+    <main>
+        <!-- inizio sezione bottoni -->
+        <section class="btn-section">
+            <!-- <input type="button" value="Add Task"> non permette di stilizzare il testo dentro al bottone -->
+            <button class="blue btn" type="button"><span class="blue-btn-text">Add Task</span></button>
+            <button class="white btn" type="button"><span class="white-btn-text">Add Section</span></button>
+        </section>
+        <!-- fine sezione bottoni -->
 
-            <!-- inizio sezione menu a tendina -->
-            <section class="menu-section">
-                <div>
-                    <h1 class="menu-title">New Task</h1>
-                    <div class="menu-element checked">Quarterly Newsletter<span class="editorial">Editorial</span></div>
-                </div>
+        <!-- inizio sezione task -->
+        <section class="task-section">
+            <div>
+                <h1 class="task-title">New Task</h1>
+                <div class="task-element checked">Quarterly Newsletter<span class="editorial">Editorial</span></div>
+            </div>
 
-                <div>
-                    <h1 class="menu-title">Today</h1>
-                    <div class="menu-element checked">Recruiting blog post<span class="editorial">Editorial</span></div>
-                    <div class="menu-element checked">Mobile app launch<span class="q1-goals">Q1 Goals</span></div>
-                    <div class="menu-element not-checked">Interview John H.<span class="recruiting">Recruiting</span></div>
-                    <div class="menu-element checked">Summit update to mobile storefronts<span class="mobile">Mobile</span></div>
-                </div>
+            <div>
+                <h1 class="task-title">Today</h1>
+                <div class="task-element checked">Recruiting blog post<span class="editorial">Editorial</span></div>
+                <div class="task-element checked">Mobile app launch<span class="q1-goals">Q1 Goals</span></div>
+                <div class="task-element not-checked">Interview John H.<span class="recruiting">Recruiting</span></div>
+                <div class="task-element checked">Summit update to mobile storefronts<span class="mobile">Mobile</span></div>
+            </div>
 
-                <div>
-                    <h1 class="menu-title">Upcoming</h1>
-                    <div class="menu-element not-checked">Schedule meeting with Alex</div>
-                    <div class="menu-element checked">Homepage refresh<span class="website">Website</span></div>
-                    <div class="menu-element checked">Onboard new Sales team members<span class="sales">Sales</span></div>
-                    <div class="menu-element checked">Review editorial calendar<span class="editorial">Editorial</span></div>
-                </div>
-            </section>
-            <!-- fine sezione menu a tendina-->
-        </main>
-    </div>
+            <div>
+                <h1 class="task-title">Upcoming</h1>
+                <div class="task-element not-checked">Schedule meeting with Alex</div>
+                <div class="task-element checked">Homepage refresh<span class="website">Website</span></div>
+                <div class="task-element checked">Onboard new Sales team members<span class="sales">Sales</span></div>
+                <div class="task-element checked">Review editorial calendar<span class="editorial">Editorial</span></div>
+            </div>
+        </section>
+        <!-- fine sezione task -->
+    </main>
 </body>
 
 </html>

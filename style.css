@@ -1,40 +1,44 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.banner{
-    padding: 20px 25px;
-}
-
-.banner .logo-image,.logo-text{
-    vertical-align: middle;
-}
-
-.banner .logo-image{
-    height: 80px;
-}
-
-.banner .logo-text{
-    font-size: 4em;
-    font-weight: bold;
-}
-
-.grey.container{
-    height: 100vh;
+body{
     background-color: rgb(246, 248, 249);
-    padding: 40px;
 }
 
 main{
     border-radius: 5px;
     overflow: hidden;
     width: 70%;
-    margin: auto;
+    margin: 40px auto 20px;
 }
 
-.btn-section, .menu-section{
+
+/* header */
+.banner{
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+.banner .logo-image, .banner .logo-text{
+    vertical-align: middle;
+}
+
+.banner .logo-image{
+    height: 60px;
+}
+
+.banner .logo-text{
+    font-size: 3em;
+    font-weight: bold;
+}
+/* fine header */
+
+
+/* sezione bottoni */
+.btn-section, .task-section{
     background-color: #fff;
     padding: 15px 60px;
 }
@@ -44,7 +48,7 @@ main{
 }
 
 .btn{
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -56,7 +60,7 @@ main{
 
 .btn.white{
     background-color: #fff;
-    border: 1px solid grey;
+    border: 1px solid #ededed;
 }
 
 .blue-btn-text{
@@ -64,72 +68,79 @@ main{
 }
 
 .white-btn-text{
-    color: grey;
+    color: lightgrey;
 }
+/* fine sezione bottoni */
 
-.menu-element{
-    margin-top: 10px;
-    margin-bottom: 25px;
-    font-size: 1.5em;
-}
 
-.menu-title{
+/* sezione task */
+.task-title{
     margin-top: 30px;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
-.menu-title::before{
+.task-element{
+    margin-top: 25px;
+    font-size: 1.2em;
+}
+
+.task-title + .task-element{
+    margin-top: 15px;
+}
+
+.task-title::before{
     content: '\25BE';
-    padding: 5px;
+    margin-right: 5px;
 }
 
-.menu-element.checked::before, .menu-element.not-checked::before{
+.task-element.checked::before, .task-element.not-checked::before{
     font-size: 0.7em;
-    padding: 0px 3px;
+    padding: 1px 4px;
     margin-right: 10px;
     border-radius: 50%;
 }
 
-.menu-element.checked::before{
+.task-element.checked::before{
     content: '\2713';
     color: #0dc70d;
     border: 1px solid #0dc70d;
 }
 
-.menu-element.not-checked::before{
+.task-element.not-checked::before{
     content: '\2715';
     color: #f00;
     border: 1px solid #f00;
 }
 
-.menu-element .editorial,.q1-goals,.recruiting,.mobile,.website,.sales{
+div.task-element span{
     color: #fff;
     font-size: 0.6em;
-    margin: 5px;
-    padding: 5px 10px;
+    margin-left: 5px;
+    padding: 8px 12px;
     border-radius: 15px;
 }
 
-.menu-element .editorial{
+.task-element .editorial{
     background-color: rgb(99, 171,235);
 }
 
-.menu-element .q1-goals{
+.task-element .q1-goals{
     background-color: rgb(151, 116, 221);
 }
 
-.menu-element .recruiting{
+.task-element .recruiting{
     background-color: rgb(124, 190, 170);
 }
 
-.menu-element .mobile{
+.task-element .mobile{
     background-color: rgb(230, 162, 75);
 }
 
-.menu-element .website{
+.task-element .website{
     background-color: rgb(201, 106, 159);
 }
 
-.menu-element .sales{
+.task-element .sales{
     background-color: rgb(182, 200, 73);
 }
+/* fine sezione task */
